@@ -1,0 +1,190 @@
+Sandy Jazmin Romero Mendoza 20121017211
+
+1. "Universidad Nacional de Honduras" (String)
+    3.1416 (double)
+    false (boolean)
+    'a' (char)
+
+2. respuesta = 0 ; dado que es a++ primero se imprime el valor de la variable a
+   y despues se incrementa en 1
+
+2.1. respuesta = 1; dado qe es ++a primero  se incrementa el valor de a
+   y luego se imprime.
+
+3.Desarrolle un programa usando if anidanos para generar el siguiente resultado
+
+ package javaapplication2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ESTUDIANTE-IS
+ */
+public class JavaApplication2 {
+
+    
+    public static void main(String[] args) {
+        
+        int a = 0;
+        Scanner entrada= new Scanner(System.in);
+        int edad;
+        System.out.println("ingrese la edad: ");
+        edad=entrada.nextInt();
+        if(edad<21){
+            System.out.println("es menor de edad");
+        } 
+        else if(edad >=21&&edad<60){
+            System.out.println("es mayor de edad.");
+        }
+        else if (edad>=60){
+         System.out.println("Es adulto mayor.");
+        
+        }
+        
+    }
+    
+}
+
+-----------------------------------------------------------------
+4.IMPRIME EL DIA
+ */
+package javaapplication4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ESTUDIANTE-IS
+ */
+public class JavaApplication4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Scanner entrada= new Scanner(System.in);
+        int dia;
+        System.out.println("ingrese el numero del dia");
+        dia=entrada.nextInt();
+        switch(dia){
+            case 1: 
+                System.out.println("Domingo");
+                break;
+            case 2: 
+                System.out.println("Lunes");
+                break;
+            case 3: 
+                System.out.println("Martes");
+                break;
+            case 4: 
+                System.out.println("Miercoles");
+            case 5: 
+                System.out.println("Jueves");
+            case 6: 
+                System.out.println("Viernes");
+                break;
+            case 7: 
+                System.out.println("Sabado");
+            default:
+                 System.out.println("error: introduzca numeros de 1 a 7");
+                
+        }
+    }
+    
+}
+------------------------------------------------------------------
+5.LETRAS MAYUSCULAS
+package javaapplication6;
+
+/**
+ *
+ * @author ESTUDIANTE-IS
+ */
+public class JavaApplication6 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        for(int i=65;i<91;i++){
+            System.out.print((char)i+" ");
+        }
+    }
+    
+}
+----------------------------------------------------------------
+6.IMPRIME LOS NUMEROS IMPARES DE 1 AL 50
+
+/**
+ *
+ * @author ESTUDIANTE-IS
+ */
+public class JavaApplication5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        for (int i=0;i<50;i++){
+            if(i%2!=0){
+                System.out.print(i+",");
+            }
+        }
+    }
+    
+}
+--------------------------------------------------------------
+7.PARES DEL 1000 AL 964
+
+ */
+package javaapplication7;
+
+/**
+ *
+ * @author ESTUDIANTE-IS
+ */
+public class JavaApplication7 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        for(int i=1000;i>=964;i--){
+            if(i%2==0){
+            System.out.print(i+",");
+          }  
+        }
+    }
+    
+    
+}
+--------------------------------------------------------------
+8.PARES DE 1000 A 962
+*/
+public class JavaApplication8 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int contador=0;
+        for(int i=1000;i>=962;i--){
+            
+            if(i%2==0){
+            System.out.print(i+",");
+            contador++;
+           if(contador==4||contador==8||contador==12||contador==16||contador==20){
+               System.out.println();
+           } 
+          }  
+        }
+        
+    }
+    
+}
